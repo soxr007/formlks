@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F0E8;
+    color: #292522;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(60, 40, 25, 0.10);
+}
+
+h1 {
+    text-align: center;
+    color: #6B422F;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #927D6D;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0 8px;
+    color: #554237;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #DED2C7;
+    border-radius: 9px;
+    background: #FDFBF8;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8B5E46;
+    box-shadow: 0 0 0 3px rgba(139, 94, 70, 0.12);
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+p {
+    color: #6B422F;
+    font-weight: bold;
+    margin: 22px 0 12px;
+}
+
+fieldset {
+    border: 1px solid #DED2C7;
+    border-radius: 10px;
+    padding: 15px;
+    background: #FDFBF8;
+}
+
+fieldset label.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #79513C;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #6B422F;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4B2D20;
+    transform: translateY(-2px);
+}
+
+#result {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}

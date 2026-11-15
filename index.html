@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Form</h1>
+    <p class="subtitle">Please fill in your information below.</p>
+
+    <form id="myForm">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd"
+               placeholder="Enter your password" required>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message..." required></textarea>
+
+        <p>Choose your subject</p>
+        <fieldset>
+            <label class="option">
+                <input type="radio" name="Favorite_langue"
+                       value="HTML" required> HTML
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Favorite_langue"
+                       value="JavaScript"> JavaScript
+            </label>
+        </fieldset>
+
+        <p>What do you have?</p>
+        <fieldset>
+            <label class="option">
+                <input type="checkbox" name="vehicle1" value="Bike">
+                I have a bike
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="vehicle2" value="Car">
+                I have a car
+            </label>
+        </fieldset>
+
+        <p>Choose a car</p>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+        </select>
+
+        <label for="browser">Choose a browser</label>
+        <input type="text" id="browser" name="browser"
+               list="browsers" placeholder="Choose a browser">
+
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Chrome">
+            <option value="Safari">
+            <option value="Firefox">
+        </datalist>
+
+        <button type="submit">Submit Form</button>
+
+        <p id="result" role="status"></p>
+
+    </form>
+</div>
+
+</body>
+</html>
